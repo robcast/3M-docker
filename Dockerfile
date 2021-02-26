@@ -1,4 +1,5 @@
-FROM openjdk:8-jre
+ARG ARCH_PREFIX
+FROM ${ARCH_PREFIX}openjdk:8-jre
 
 LABEL image.maintainer="Yannis Marketakis" \
 	image.organization="FORTH-ICS" \
